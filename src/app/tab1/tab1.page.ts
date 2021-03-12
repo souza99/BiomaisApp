@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-tab1',
@@ -7,6 +8,25 @@ import { Component } from '@angular/core';
 })
 export class Tab1Page {
 
-  constructor() {}
+  constructor(public router:Router) {}
 
+  chamardiGestorio(){
+    this.router.navigate(['digestorio']);
+  }
+  chamarConf(){
+    this.router.navigate(['configuracoes'])
+  }
+  chamarcarDiovascular(){
+    this.router.navigate(['cardiovascular'])
+  }
+  chamarRespiratorio(){
+    this.router.navigate(['respiratorio'])
+  }
+  chamarUrinario(){
+    this.router.navigate(['urinario'])
+  }
+  chamarReprodutor(){
+    this.router.navigate(['reprodutor'])
+  }
+  
 }
