@@ -11,10 +11,6 @@ const routes: Routes = [
     loadChildren: () => import('./digestorio/digestorio.module').then( m => m.DigestorioPageModule)
   },
   {
-    path: 'cardiovascular',
-    loadChildren: () => import('./cardiovascular/cardiovascular.module').then( m => m.CardiovascularPageModule)
-  },
-  {
     path: 'reprodutor',
     loadChildren: () => import('./reprodutor/reprodutor.module').then( m => m.ReprodutorPageModule)
   },
@@ -31,32 +27,12 @@ const routes: Routes = [
     loadChildren: () => import('./configuracoes/configuracoes.module').then( m => m.ConfiguracoesPageModule)
   },
   {
-    path: 'boca',
-    loadChildren: () => import('./boca/boca.module').then( m => m.BocaPageModule)
+    path: 'circulatorio',
+    loadChildren: () => import('./circulatorio/circulatorio.module').then( m => m.CirculatorioPageModule)
   },
   {
-    path: 'faringe',
-    loadChildren: () => import('./faringe/faringe.module').then( m => m.FaringePageModule)
-  },
-  {
-    path: 'esofago',
-    loadChildren: () => import('./esofago/esofago.module').then( m => m.EsofagoPageModule)
-  },
-  {
-    path: 'estomago',
-    loadChildren: () => import('./estomago/estomago.module').then( m => m.EstomagoPageModule)
-  },
-  {
-    path: 'intestino',
-    loadChildren: () => import('./intestino/intestino.module').then( m => m.IntestinoPageModule)
-  },
-  {
-    path: 'intestino-grosso',
-    loadChildren: () => import('./intestino-grosso/intestino-grosso.module').then( m => m.IntestinoGrossoPageModule)
-  },
-  {
-    path: 'anus',
-    loadChildren: () => import('./anus/anus.module').then( m => m.AnusPageModule)
+    path: 'tab4',
+    loadChildren: () => import('./tab4/tab4.module').then( m => m.Tab4PageModule)
   }
 ];
 @NgModule({

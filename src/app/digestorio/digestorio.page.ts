@@ -1,36 +1,36 @@
-import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router'
+import { Component, OnInit } from "@angular/core";
+
 @Component({
-  selector: 'app-digestorio',
-  templateUrl: './digestorio.page.html',
-  styleUrls: ['./digestorio.page.scss'],
+  selector: "app-home",
+  templateUrl: "digestorio.page.html",
+  styleUrls: ["digestorio.page.scss"]
 })
-export class DigestorioPage implements OnInit {
+export class DigestorioPage {
+  public items: any = [];
 
-  constructor(public router:Router) {}
-
-  ngOnInit() {
-  }
-  chamarBoca(){
-    this.router.navigate(['boca'])
-  }
-  chamarFaringe(){
-    this.router.navigate(['faringe'])
-  }
-  chamarEsofago(){
-    this.router.navigate(['esofago'])
-  }
-  chamarEstomago(){
-    this.router.navigate(['estomago'])
-  }
-  chamarIntestinoDel(){
-    this.router.navigate(['intestino'])
-  }
-  chamarIntestinoGro(){
-    this.router.navigate(['intestino-grosso'])
-  }
-  chamarAnus(){
-    this.router.navigate(['anus'])
+  constructor() {
+    this.items = [
+      { expanded: false }
+    ];
   }
 
+  expandItem(item): void {
+    if (item.expanded) {
+      item.expanded = false;
+    } else {
+      this.items.map(listItem => {
+        if (item == listItem) {
+          listItem.expanded = !listItem.expanded;
+        } else {
+          listItem.expanded = false;
+        }
+        return listItem;
+      });
+    }
+  }
+
+  visible = false;
+  toggle() {
+   this.visible = !this.visible;
+  }
 }
