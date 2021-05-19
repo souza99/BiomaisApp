@@ -33,6 +33,26 @@ const routes: Routes = [
   {
     path: 'tab4',
     loadChildren: () => import('./tab4/tab4.module').then( m => m.Tab4PageModule)
+  },
+  {
+    path: 'distrito-sanguineo',
+    loadChildren: () => import('./distrito-sanguineo/distrito-sanguineo.module').then( m => m.DistritoSanguineoPageModule)
+  },
+  {
+    path: 'distrito-linfatico',
+    loadChildren: () => import('./distrito-linfatico/distrito-linfatico.module').then( m => m.DistritoLinfaticoPageModule)
+  },
+  {
+    path: 'defesas-corpo',
+    loadChildren: () => import('./defesas-corpo/defesas-corpo.module').then( m => m.DefesasCorpoPageModule)
+  },
+  {
+    path: 'questao-multipla-escolha',
+    loadChildren: () => import('./questao-multipla-escolha/questao-multipla-escolha.module').then( m => m.QuestaoMultiplaEscolhaPageModule)
+  },
+  {
+    path: 'questao-par',
+    loadChildren: () => import('./questao-par/questao-par.module').then( m => m.QuestaoParPageModule)
   }
 ];
 @NgModule({
