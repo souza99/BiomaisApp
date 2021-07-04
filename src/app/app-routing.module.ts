@@ -54,6 +54,7 @@ const routes: Routes = [
     path: 'questao-par',
     loadChildren: () => import('./questao-par/questao-par.module').then( m => m.QuestaoParPageModule)
   }
+
 ];
 @NgModule({
   imports: [

@@ -1,4 +1,3 @@
-  
 import { Component, Injectable } from '@angular/core';
 import { NavController } from '@ionic/angular';
 import { QuestaoMultiplaEscolhaPage } from '../questao-multipla-escolha/questao-multipla-escolha.page';

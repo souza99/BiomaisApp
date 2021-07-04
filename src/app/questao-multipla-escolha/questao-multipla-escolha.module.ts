@@ -18,3 +18,4 @@ import { QuestaoMultiplaEscolhaPage } from './questao-multipla-escolha.page';
   declarations: [QuestaoMultiplaEscolhaPage]
 })
 export class QuestaoMultiplaEscolhaPageModule {}
+
